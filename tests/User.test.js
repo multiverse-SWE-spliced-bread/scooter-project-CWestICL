@@ -9,15 +9,16 @@ describe("The person class", () => {
         expect(p1.age).toBe(32);
         expect(p1.email).toBe("m.corrigan@jlb.co.uk");
     });
-    test("register() method should make person into user", () => {
-        const p1 = new Person("Mark",32,"m.corrigan@jlb.co.uk");
-        ScooterApp.addUser(p1,"ChairmanMark","stalingrad");
-        expect(p1 instanceof User).toBeTruthy();
-    });
-    test("register() method should assign username and password correctly", () => {
-        const p1 = new Person("Mark",32,"m.corrigan@jlb.co.uk");
-        ScooterApp.addUser(p1,"ChairmanMark","stalingrad");
-        expect(p1.username).toBe("ChairmanMark");
-        expect(p1.password).toBe("stalingrad");
+});
+describe("The user class", () => {
+    test("User class should assign attributes correctly", () => {
+        const u1 = new User("Mark",32,"m.corrigan@jlb.co.uk","MarkTheShark","stalingrad");
+        expect(u1.name).toBe("Mark");
+        expect(u1.age).toBe(32);
+        expect(u1.email).toBe("m.corrigan@jlb.co.uk");
+        expect(u1.username).toBe("MarkTheShark");
+        expect(u1.password).toBe("stalingrad");
+        expect(u1.loggedIn).toBe(false);
+        expect(u1.hiredScooter).toBe(null);
     });
 });
