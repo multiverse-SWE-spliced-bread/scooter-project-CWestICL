@@ -1,0 +1,23 @@
+{
+  "name": "scooter-project",
+  "version": "1.0.0",
+  "description": "project template for scooter project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --verbose --collect-coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swe-assignments/scooter-project.git"
+  },
+  "author": "MV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swe-assignments/scooter-project/issues"
+  },
+  "homepage": "https://github.com/swe-assignments/scooter-project#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
