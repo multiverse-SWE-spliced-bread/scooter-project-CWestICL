@@ -1,6 +1,6 @@
 const Scooter = require('../src/Scooter');
 const User = require('../src/User');
-
+/*
 //typeof scooter === object
 describe('scooter object', () => {
   test('does something', () => {
@@ -17,3 +17,4 @@ describe('scooter methods', () => {
   //requestRepair method
   //charge method
 });
+*/
